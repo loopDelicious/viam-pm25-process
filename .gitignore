@@ -1,0 +1,12 @@
+.env
+venv/
+viam-env/
+/bin
+/include
+/lib
+/lib64
+/share
+pyvenv.cfg
+.installed
+module.tar.gz
+.vscode/
