@@ -41,10 +41,10 @@ async def main():
         # Check if any of the PM values exceed the unhealthy thresholds
         if any(readings.get(pm_type, 0) > threshold for pm_type, threshold in unhealthy_thresholds.items()): 
             LOGGER.info('UNHEALTHY.')
-            await kasa_plug.do_command({"turn_on": []})
+            await kasa_plug.do_command({"toggle_on": []})
         else:
             LOGGER.info('HEALTHY!')
-            await kasa_plug.do_command({"turn_off": []})
+            await kasa_plug.do_command({"toggle_off": []})
 
         # wait before checking again
         await asyncio.sleep(10)
