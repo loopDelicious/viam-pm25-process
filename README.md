@@ -15,7 +15,9 @@ Follow step-by-step instructions in the [Viam docs](https://docs.viam.com/config
 - Install the Viam Python SDK and other required dependencies in this new directory.
   $ pip3 install --target=process viam-sdk
 - Add your code to this directory.
+  ```
   $ scp process.py user@host.local:/home/myboard/process/process.py
+  ```
 - Add your environment variables to the configuration JSON under the CONFIGURE tab in the Viam app.
 
 ![Configure environment variables in the Viam app](./configureScreenshot.png)
